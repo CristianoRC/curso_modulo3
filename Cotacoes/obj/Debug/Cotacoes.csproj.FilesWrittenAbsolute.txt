@@ -1,0 +1,18 @@
+/home/cristiano/Projetos/Exercícios M3/Cotacoes/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/cristiano/Projetos/Exercícios M3/Cotacoes/bin/Debug/Spartacus.dll
+/home/cristiano/Projetos/Exercícios M3/Cotacoes/bin/Debug/Cotacoes.exe.mdb
+/home/cristiano/Projetos/Exercícios M3/Cotacoes/bin/Debug/Cotacoes.exe
+/home/cristiano/Projetos/Exercícios M3/Cotacoes/obj/Debug/Cotacoes.exe
+/home/cristiano/Projetos/Exercícios M3/Cotacoes/obj/Debug/Cotacoes.exe.mdb
+/home/cristiano/Projetos/ExerciciosM3/Cotacoes/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/cristiano/Projetos/ExerciciosM3/Cotacoes/bin/Debug/Cotacoes.exe.mdb
+/home/cristiano/Projetos/ExerciciosM3/Cotacoes/bin/Debug/Cotacoes.exe
+/home/cristiano/Projetos/ExerciciosM3/Cotacoes/obj/Debug/Cotacoes.exe
+/home/cristiano/Projetos/ExerciciosM3/Cotacoes/obj/Debug/Cotacoes.exe.mdb
+/home/cristiano/Projetos/ExerciciosM3/Cotacoes/bin/Debug/Spartacus.dll
+/home/cristiano/Projetos/curso_modulo3/Cotacoes/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/cristiano/Projetos/curso_modulo3/Cotacoes/bin/Debug/Cotacoes.exe.mdb
+/home/cristiano/Projetos/curso_modulo3/Cotacoes/bin/Debug/Cotacoes.exe
+/home/cristiano/Projetos/curso_modulo3/Cotacoes/obj/Debug/Cotacoes.exe
+/home/cristiano/Projetos/curso_modulo3/Cotacoes/obj/Debug/Cotacoes.exe.mdb
+/home/cristiano/Projetos/curso_modulo3/Cotacoes/bin/Debug/Spartacus.dll

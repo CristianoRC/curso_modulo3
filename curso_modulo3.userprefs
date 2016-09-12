@@ -1,9 +1,10 @@
-﻿<Properties StartupItem="Financas/Financas.csproj">
+﻿<Properties StartupItem="Cotacoes/Cotacoes.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Financas/JanelaPrincipal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cotacoes/Program.cs">
     <Files>
-      <File FileName="Financas/JanelaPrincipal.cs" Line="230" Column="64" />
-      <File FileName="Financas/JanelaAgentes.cs" Line="1" Column="1" />
+      <File FileName="Cotacoes/Program.cs" Line="20" Column="45" />
+      <File FileName="Cotacoes/ControleArquivo.cs" Line="31" Column="30" />
+      <File FileName="Cotacoes/Controle.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
