@@ -43,7 +43,7 @@ namespace Cotacoes
                     v_fields = new System.Collections.Generic.List<Spartacus.Reporting.Field>();
 
                     v_fields.Add(new Spartacus.Reporting.Field("dia", "Data", Spartacus.Reporting.FieldAlignment.CENTER, 10, Spartacus.Database.Type.STRING));
-                    v_fields.Add(new Spartacus.Reporting.Field("codmoeda", "Cód. Moeda", Spartacus.Reporting.FieldAlignment.CENTER, 8, Spartacus.Database.Type.STRING));
+                    v_fields.Add(new Spartacus.Reporting.Field("codmoeda", "Cód. Moeda", Spartacus.Reporting.FieldAlignment.CENTER, 10, Spartacus.Database.Type.STRING));
                     v_fields.Add(new Spartacus.Reporting.Field("tipomoeda", "Tipo Moeda", Spartacus.Reporting.FieldAlignment.CENTER, 10, Spartacus.Database.Type.STRING));
                     v_fields.Add(new Spartacus.Reporting.Field("siglamoeda", "Sigla Moeda", Spartacus.Reporting.FieldAlignment.CENTER, 10, Spartacus.Database.Type.STRING));
                     v_fields.Add(new Spartacus.Reporting.Field("taxacompra", "Taxa Compra", Spartacus.Reporting.FieldAlignment.RIGHT, 15, Spartacus.Database.Type.REAL));
