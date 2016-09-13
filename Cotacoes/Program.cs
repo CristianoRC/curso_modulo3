@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Cotacoes
 {
@@ -6,9 +7,14 @@ namespace Cotacoes
     {
         public static void Main(string[] args)
         {
-            String saida = ControleArquivo.AtualizarDados().ToString();
 
+            //Mensagem de Download
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Fazendo download das informações, por favor espere...");
+
+            String saida = ControleArquivo.AtualizarDados().ToString();
             string[] respostas = saida.Split('$'); //Separando os dois resultados, o do banco e da atualização do arquivo.
+            Console.Clear();
 
 
             Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -47,7 +53,22 @@ namespace Cotacoes
             Console.WriteLine("---------------------------------------------------");
             Console.ForegroundColor = ConsoleColor.White;
 
+            Console.Write("Você deseja gerar um relatório do dia atual?(S/N)");
+            string escolha = Console.ReadLine();
 
+            if(escolha.ToLower() == "s" || escolha.ToLower() == "sim")
+            {
+                string ResultadoRelatorio = ControlePDF.GerarRelatrio();
+
+                if (ResultadoRelatorio == "Relatório gerado com sucesso!")
+                {
+                    Process.Start("relatorio.pdf");
+                }
+                else
+                {
+                    Console.WriteLine(ResultadoRelatorio);
+                }
+            }
         }
     }
 }
