@@ -16,7 +16,6 @@ namespace Cotacoes
             }
         }
             
-
         public static string GerarRelatrio()
         {
             ApagarRelatorio();
@@ -26,7 +25,7 @@ namespace Cotacoes
             System.Data.DataTable tabela = new System.Data.DataTable("relatorio");
             Spartacus.Database.Command cmd = new Spartacus.Database.Command();
 
-            cmd.v_text = "select * from cotacoes where dia = #dia#";
+            cmd.v_text = "select 'Relatório de Cotações do Dia Curso de Programação CSharp' as titulo, * from cotacoes where dia = #dia#";
 
             cmd.AddParameter("dia",Spartacus.Database.Type.STRING);
             cmd.SetValue("dia", DateTime.Now.ToString("dd/MM/yyyy"));
@@ -35,10 +34,24 @@ namespace Cotacoes
             {
                 database = new Spartacus.Database.Sqlite("cotacoes.db");
                 tabela = database.Query(cmd.GetUpdatedText(),"relatorio");
-               
-                if(tabela.Rows.Count  != 0)
+
+                if(tabela.Rows.Count != 0)
                 {
-                    relatorio = new Spartacus.Reporting.Report(tabela);
+                    System.Collections.Generic.List<Spartacus.Reporting.Field> v_fields;
+                    Spartacus.Reporting.Field v_field;
+
+                    v_fields = new System.Collections.Generic.List<Spartacus.Reporting.Field>();
+
+                    v_fields.Add(new Spartacus.Reporting.Field("dia", "Data", Spartacus.Reporting.FieldAlignment.CENTER, 10, Spartacus.Database.Type.STRING));
+                    v_fields.Add(new Spartacus.Reporting.Field("codmoeda", "Cód. Moeda", Spartacus.Reporting.FieldAlignment.CENTER, 8, Spartacus.Database.Type.STRING));
+                    v_fields.Add(new Spartacus.Reporting.Field("tipomoeda", "Tipo Moeda", Spartacus.Reporting.FieldAlignment.CENTER, 10, Spartacus.Database.Type.STRING));
+                    v_fields.Add(new Spartacus.Reporting.Field("siglamoeda", "Sigla Moeda", Spartacus.Reporting.FieldAlignment.CENTER, 10, Spartacus.Database.Type.STRING));
+                    v_fields.Add(new Spartacus.Reporting.Field("taxacompra", "Taxa Compra", Spartacus.Reporting.FieldAlignment.RIGHT, 15, Spartacus.Database.Type.REAL));
+                    v_fields.Add(new Spartacus.Reporting.Field("taxavenda", "Taxa Venda", Spartacus.Reporting.FieldAlignment.RIGHT, 15, Spartacus.Database.Type.REAL));
+                    v_fields.Add(new Spartacus.Reporting.Field("parcompra", "Par. Compra", Spartacus.Reporting.FieldAlignment.RIGHT, 15, Spartacus.Database.Type.REAL));
+                    v_fields.Add(new Spartacus.Reporting.Field("parvenda", "Par. Venda", Spartacus.Reporting.FieldAlignment.RIGHT, 15, Spartacus.Database.Type.REAL));
+
+                    relatorio = new Spartacus.Reporting.Report(tabela, "titulo", v_fields);
                     relatorio.Execute();
                     relatorio.Save("relatorio.pdf");
 
