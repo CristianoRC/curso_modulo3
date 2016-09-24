@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 ﻿<Properties StartupItem="ProjetoJSON/ProjetoJSON.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Cotacoes/Program.cs">
     <Files>
       <File FileName="Cotacoes/Program.cs" Line="61" Column="69" />
       <File FileName="Cotacoes/ControleArquivo.cs" Line="31" Column="46" />
+=======
+﻿<Properties StartupItem="TesteTamanhoBloco/TesteTamanhoBloco.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TesteTamanhoBloco/Program.cs">
+    <Files>
+      <File FileName="TesteTamanhoBloco/Program.cs" Line="52" Column="13" />
+      <File FileName="Lista4Exercicio06/Program.cs" Line="61" Column="23" />
+>>>>>>> master
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
