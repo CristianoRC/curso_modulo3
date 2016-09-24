@@ -10,13 +10,13 @@ namespace Cotacoes
         /// </summary>
         private static void ApagarRelatorio()
         {
-            if(File.Exists("relatório.pdf"))
+            if (File.Exists("relatório.pdf"))
             {
                 File.Delete("relatório.pdf");
             }
         }
-            
-        public static string GerarRelatrio()
+
+        public static string GerarRelatorio()
         {
             ApagarRelatorio();
 
@@ -27,19 +27,18 @@ namespace Cotacoes
 
             cmd.v_text = "select 'Relatório de Cotações do Dia Curso de Programação CSharp' as titulo, * from cotacoes where dia = #dia#";
 
-            cmd.AddParameter("dia",Spartacus.Database.Type.STRING);
+            cmd.AddParameter("dia", Spartacus.Database.Type.STRING);
             cmd.SetValue("dia", DateTime.Now.ToString("dd/MM/yyyy"));
 
             try
             {
                 database = new Spartacus.Database.Sqlite("cotacoes.db");
-                tabela = database.Query(cmd.GetUpdatedText(),"relatorio");
+                tabela = database.Query(cmd.GetUpdatedText(), "relatorio");
 
-                if(tabela.Rows.Count != 0)
+                if (tabela.Rows.Count != 0)
                 {
                     System.Collections.Generic.List<Spartacus.Reporting.Field> v_fields;
-                    Spartacus.Reporting.Field v_field;
-
+                  
                     v_fields = new System.Collections.Generic.List<Spartacus.Reporting.Field>();
 
                     v_fields.Add(new Spartacus.Reporting.Field("dia", "Data", Spartacus.Reporting.FieldAlignment.CENTER, 10, Spartacus.Database.Type.STRING));
@@ -65,7 +64,7 @@ namespace Cotacoes
             }
             catch (Spartacus.Database.Exception ex)
             {
-                return String.Format("Ocorreu um erro ao gerar o relatório: {0}",ex.v_message);
+                return String.Format("Ocorreu um erro ao gerar o relatório: {0}", ex.v_message);
             }
         }
     }

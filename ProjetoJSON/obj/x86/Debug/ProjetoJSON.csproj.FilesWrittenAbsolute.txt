@@ -1,0 +1,6 @@
+/home/cristiano/Projetos/curso_modulo3/ProjetoJSON/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/cristiano/Projetos/curso_modulo3/ProjetoJSON/bin/Debug/Newtonsoft.Json.dll
+/home/cristiano/Projetos/curso_modulo3/ProjetoJSON/bin/Debug/ProjetoJSON.exe.mdb
+/home/cristiano/Projetos/curso_modulo3/ProjetoJSON/bin/Debug/ProjetoJSON.exe
+/home/cristiano/Projetos/curso_modulo3/ProjetoJSON/obj/x86/Debug/ProjetoJSON.exe
+/home/cristiano/Projetos/curso_modulo3/ProjetoJSON/obj/x86/Debug/ProjetoJSON.exe.mdb

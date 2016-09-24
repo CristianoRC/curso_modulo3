@@ -7,7 +7,7 @@ namespace Cotacoes
     {
         public static void Main(string[] args)
         {
-
+            
             //Mensagem de Download
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Fazendo download das informações, por favor espere...");
@@ -58,7 +58,7 @@ namespace Cotacoes
 
             if(escolha.ToLower() == "s" || escolha.ToLower() == "sim")
             {
-                string ResultadoRelatorio = ControlePDF.GerarRelatrio();
+                string ResultadoRelatorio = ControlePDF.GerarRelatorio();
 
                 if (ResultadoRelatorio == "Relatório gerado com sucesso!")
                 {
