@@ -1,0 +1,7 @@
+/home/cristiano/Projetos/curso_modulo3/CEP_Testes/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/cristiano/Projetos/curso_modulo3/CEP_Testes/bin/Debug/Newtonsoft.Json.dll
+/home/cristiano/Projetos/curso_modulo3/CEP_Testes/bin/Debug/DotCEP.dll
+/home/cristiano/Projetos/curso_modulo3/CEP_Testes/bin/Debug/CEP_Testes.exe.mdb
+/home/cristiano/Projetos/curso_modulo3/CEP_Testes/bin/Debug/CEP_Testes.exe
+/home/cristiano/Projetos/curso_modulo3/CEP_Testes/obj/x86/Debug/CEP_Testes.exe
+/home/cristiano/Projetos/curso_modulo3/CEP_Testes/obj/x86/Debug/CEP_Testes.exe.mdb

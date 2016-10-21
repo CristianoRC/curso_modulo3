@@ -1,30 +1,9 @@
-<<<<<<< HEAD
-﻿<Properties StartupItem="ProjetoJSON/ProjetoJSON.csproj">
+﻿<Properties StartupItem="CEP_Testes/CEP_Testes.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cotacoes/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CEP_Testes/Program.cs">
     <Files>
-      <File FileName="Cotacoes/Program.cs" Line="61" Column="69" />
-      <File FileName="Cotacoes/ControleArquivo.cs" Line="31" Column="46" />
-=======
-﻿<Properties StartupItem="TesteTamanhoBloco/TesteTamanhoBloco.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TesteTamanhoBloco/Program.cs">
-    <Files>
-      <File FileName="TesteTamanhoBloco/Program.cs" Line="52" Column="13" />
-      <File FileName="Lista4Exercicio06/Program.cs" Line="61" Column="23" />
->>>>>>> master
+      <File FileName="CEP_Testes/Program.cs" Line="15" Column="74" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="curso_modulo3" expanded="True">
-            <Node name="Cotacoes" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
